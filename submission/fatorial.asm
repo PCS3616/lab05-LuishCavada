@@ -15,16 +15,16 @@ K /1400; se aux == 1 termina
 K /0300; se aux != 0 && aux != 1, inicia tratamento
 
 @ /0300
-K 8104; carrega o aux
-K 6102; multiplica fatorial por aux
-K 9102; atualiza fatorial *= aux
-K 8104; carrega aux novamente
-K 5500; subtrai 1 de aux
-K 9104; atualiza aux = aux - 1
-K 0206; volta para o inicio do loop
+K /8104; carrega o aux
+K /6102; multiplica fatorial por aux
+K /9102; atualiza fatorial *= aux
+K /8104; carrega aux novamente
+K /5500; subtrai 1 de aux
+K /9104; atualiza aux = aux - 1
+K /0206; volta para o inicio do loop
 
 @ /0400
-K B200; termina sub-rotina
+K /B200; termina sub-rotina
 
 @ /0500
-K 0001; memoria com 1 guardado
+K /0001; memoria com 1 guardado
