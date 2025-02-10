@@ -33,10 +33,12 @@ MM temp
 LD salvar
 AD endereco
 MM /600
+LD temp
+JP /0600
 @ /602
-JP /001A
+JP /001E
 
-@ /001A
+@ /001E
 LD i 
 AD um
 SB limite
