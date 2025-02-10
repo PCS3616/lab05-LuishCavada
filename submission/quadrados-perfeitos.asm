@@ -16,17 +16,27 @@ K /0000
 soma_impar LD i 
 ML dois
 AD um 
+MM temp ; 0006
+
+LD carregar ; 0008
+AD endereco_anterior
+MM /500 ; 000C
+JP /500 ; 000E
+
+@ /502
+JP /0010
+
+@ /0010
+AD temp
 MM temp
 
-LD endereco_anterior
-AD carregar
-MM /0010
-; 0010
-AD temp
+LD salvar
+AD endereco
+MM /600
+@ /602
+JP /001A
 
-LD endereco
-AD salvar
-MM /001A
+@ /001A
 LD i 
 AD um
 SB limite
