@@ -5,10 +5,10 @@ x K =0
 y K =0
 soma K =0
 
-GD D00 ; le input x do teclado
+GD D000 ; le input x do teclado
 MM x   ; guarda variavel x
-GD D00
-GD D00 ; le input y do teclado
+GD D000
+GD D000 ; le input y do teclado
 MM y   ; guarda variavel y
 
 LD x 
@@ -25,6 +25,7 @@ JN finalizacao
 AD cem
 AD numero
 MM soma
+JP finalizacao
 
 finalizacao LD soma
 PD E100
